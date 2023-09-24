@@ -9,6 +9,7 @@ public class MainEj1 {
         ArrayList<Socio> listaSocios = new ArrayList<>();
         ArrayList<Actividad> listaActividades = new ArrayList<>();
 
+        //Socios
         Socio juan = new Socio("Juan","Perez","123","juan@gmail.com",12345678,Socio.Subscripcion.MEDIA);
         listaSocios.add(juan);
         Socio ana = new Socio("Ana","Lopez","132","ana@gmail.com",32435476,Socio.Subscripcion.DESTACADA);
@@ -20,6 +21,7 @@ public class MainEj1 {
             System.out.println("DNI: "+socio.getDni()+" "+socio.getNombre()+" "+socio.getApellido()+" Subscripcion: "+socio.getSubscripcionStr());
         }
 
+        //Actividades
         Actividad cancha = new Actividad("Cancha",2);
         listaActividades.add(cancha);
         Actividad vestuarios = new Actividad("Vestuarios",3);
@@ -47,7 +49,25 @@ public class MainEj1 {
             System.out.println("Actividad: "+actividad.getNombre()+", Nivel: "+actividad.getNivel());
         }
 
+        //Intentos de acceso
+        System.out.println("----------------------------------------------------------------");
+        intentaIngresar(ana,vestuarios);
+        intentaIngresar(juan,vestuarios);
+        intentaIngresar(juan,cancha);
+        intentaIngresar(mirta,buffet);
+        intentaIngresar(mirta,palco);
+        intentaIngresar(ana,buffet);
 
+
+    }
+
+    public static void intentaIngresar(Socio socio,Actividad actividad){
+        System.out.println(socio.getNombre()+" intenta ingresar a "+actividad.getNombre()+"...");
+        if (socio.accederActividad(actividad)){
+            System.out.println("Acceso otorgado.\n");
+        }else {
+            System.out.println("Acceso denegado.\n");
+        }
     }
     public static ArrayList<Actividad> actividadesPorNivel(ArrayList<Actividad> lActividades){
         java.util.ArrayList<Ej1.Actividad> listaActividadesAux = new ArrayList<>(lActividades);

@@ -9,12 +9,5 @@ public class Credencial {
         this.dniSocio = dni;
     }
 
-    public boolean validarActividad(Actividad actividad){
-        if (actividad.getNivel()== nivel){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
+    public boolean validarActividad(Actividad actividad){return false;};
 }

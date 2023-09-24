@@ -6,4 +6,14 @@ public class CredencialBasica extends Credencial {
     public CredencialBasica(int dni) {
         super(dni);
     }
+
+    @Override
+    public boolean validarActividad(Actividad actividad){
+        if (actividad.getNivel()== nivel){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
