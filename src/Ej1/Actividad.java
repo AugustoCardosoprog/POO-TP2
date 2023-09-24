@@ -20,9 +20,9 @@ public class Actividad {
     /**
      * 1.Nivel Basico / 2.Nivel Medio / 3.Nivel Destacado / Por defecto o error, Basico
      */
-    public boolean Actividad(String nombre,int level){
+    public Actividad(String nombre,int level){
         this.nombre = nombre;
-        return cambiarNivel(level);
+        cambiarNivel(level);
     }
 
     private boolean cambiarNivel(int level) {
