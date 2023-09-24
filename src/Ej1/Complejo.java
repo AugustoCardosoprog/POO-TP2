@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class Complejo {
-    private ArrayList<Socio> listaSocios = new ArrayList<>();
+    /*private ArrayList<Socio> listaSocios = new ArrayList<>();
     private ArrayList<Actividad> listaActividades = new ArrayList<>();
 
     public void altaSocio(String nombre, String apellido, String direccion, String email, int dni, Socio.Subscripcion subscripcion){
@@ -17,8 +17,8 @@ public class Complejo {
     public void altaActividad(String nombre,int level){
         Actividad actividad = new Actividad(nombre,level);
         listaActividades.add(actividad);
-    }
-    public ArrayList<Actividad> actividadesPorNivel(){
+    }*/
+    /*public ArrayList<Actividad> actividadesPorNivel(){
         ArrayList<Actividad> listaActividadesAux = new ArrayList<>(listaActividades);
         Comparator<Actividad> porNivel = Comparator.comparing(Actividad::getNivel);
         Collections.sort(listaActividadesAux,porNivel);
@@ -43,6 +43,6 @@ public class Complejo {
             CredencialBasica credencialBasica = new CredencialBasica(socio.getDni());
             socio.setCredencial(credencialBasica);
         }
-    }
+    }*/
 
 }

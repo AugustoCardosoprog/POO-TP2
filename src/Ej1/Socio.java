@@ -21,6 +21,7 @@ public class Socio {
         this.email=email;
         this.dni=dni;
         this.subscripcion=subscripcion;
+        otorgarCredencial();
     }
 
     public void setCredencial(Credencial credencial) {
@@ -37,6 +38,49 @@ public class Socio {
 
     public int getDni() {
         return dni;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getSubscripcionStr(){
+        if(subscripcion==Subscripcion.MEDIA){
+            return "MEDIA";
+        } else if (subscripcion==Subscripcion.DESTACADA) {
+            return "DESTACADA";
+        }else {
+            return "BASICA";
+        }
+    }
+
+    public void otorgarCredencial(){
+        if (subscripcion== Socio.Subscripcion.MEDIA){
+            CredencialMedia credencialMedia = new CredencialMedia(getDni());
+            setCredencial(credencialMedia);
+        } else if (subscripcion== Socio.Subscripcion.DESTACADA) {
+            CredencialDestacada credencialDestacada = new CredencialDestacada(getDni());
+            setCredencial(credencialDestacada);
+        }else {
+            CredencialBasica credencialBasica = new CredencialBasica(getDni());
+            setCredencial(credencialBasica);
+        }
+    }
+
+    public boolean accederActividad(Actividad actividad){
+        return credencial.validarActividad(actividad);
     }
 }
 
