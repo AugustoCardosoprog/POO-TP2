@@ -5,10 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2bb8f78-398b-477b-b349-7dc9e1feb2e5" name="Changes" comment="Ej1">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej2/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej2/Compra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej2/Destino.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej2/Excursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej2/Hospedaje.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej2/MainEj2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej2/MedioTransporte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej2/Paquete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej2/Proveedor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej2/Servicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej3/Alumno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej3/Asistencia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej3/Comision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej3/Credencial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej3/Disciplina.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej3/MainEj3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej3/Profesor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej3/Secretaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ej1/Credencial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ej1/Credencial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ej1/CredencialBasica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ej1/CredencialBasica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ej1/MainEj1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ej1/MainEj1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej1/Complejo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,19 +52,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/augus/Documents/CODIGO/Java/Tp1",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.intellij.sdk.settings.AppSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/augus/Documents/CODIGO/Java/Tp1&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,38 +75,17 @@
       <option name="presentableId" value="Default" />
       <updated>1695438248102</updated>
     </task>
-    <task id="LOCAL-00001" summary="Ej1">
-      <option name="closed" value="true" />
-      <created>1695576498338</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1695576498338</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Ej1">
-      <option name="closed" value="true" />
-      <created>1695586744201</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1695586744201</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ej1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ej1" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Ej1/Socio.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
