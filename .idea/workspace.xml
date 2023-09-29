@@ -4,29 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2bb8f78-398b-477b-b349-7dc9e1feb2e5" name="Changes" comment="Ej1">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej2/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej2/Compra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej2/Destino.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej2/Excursion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej2/Hospedaje.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej2/MainEj2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej2/MedioTransporte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej2/Paquete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej2/Proveedor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej2/Servicio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej3/Alumno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej3/Asistencia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej3/Comision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej3/Credencial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej3/Disciplina.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej3/MainEj3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej3/Profesor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej3/Secretaria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a2bb8f78-398b-477b-b349-7dc9e1feb2e5" name="Changes" comment="Ej2 y 3">
+      <change afterPath="$PROJECT_DIR$/src/EJ4/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EJ4/Compra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EJ4/Cuenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EJ4/CuentaCredito.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EJ4/MainEj4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ej1/Complejo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +59,21 @@
       <option name="presentableId" value="Default" />
       <updated>1695438248102</updated>
     </task>
+    <task id="LOCAL-00001" summary="Ej2 y 3">
+      <option name="closed" value="true" />
+      <created>1695871744834</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695871744834</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ej1" />
+    <MESSAGE value="Ej2 y 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ej2 y 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
