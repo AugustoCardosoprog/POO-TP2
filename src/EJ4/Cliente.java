@@ -16,11 +16,16 @@ public class Cliente {
         cuentaComun = new Cuenta(saldoInicial,limiteGiroInicial);
     }
 
+
     public void otorgarCuentaCredito(double saldoInicial,double limiteCreditoInicial){
         cuentaCredito = new CuentaCredito(saldoInicial,limiteCreditoInicial);
     }
     public boolean comprar(double monto){
         return cuentaComun.comprar(monto);
+    }
+
+    public boolean booleanCompraNecesitaGiro(double monto){
+        return cuentaComun.necesitaGiro(monto);
     }
 
     public boolean comprarConCredito(double monto){

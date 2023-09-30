@@ -35,6 +35,13 @@ public class Cuenta {
             return false;
         }
     }
+    public boolean necesitaGiro(double monto){
+        if (saldo<monto){
+            return true;
+        }else {
+            return false;
+        }
+    }
 
     public boolean invertir(double monto){
         if ((saldo>=monto)&&(invertido==0)){
