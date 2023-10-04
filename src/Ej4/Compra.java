@@ -1,4 +1,4 @@
-package EJ4;
+package Ej4;
 
 import java.time.LocalDate;
 

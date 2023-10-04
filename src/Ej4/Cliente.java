@@ -1,11 +1,14 @@
-package EJ4;
+package Ej4;
+
+import Ej5.CuentaMejorada;
 
 public class Cliente {
     private String dni;
     private String nombre;
     private String apellido;
-    private Cuenta cuentaComun=null;
+    protected Cuenta cuenta=null;
     private CuentaCredito cuentaCredito=null;
+
     public Cliente(String dni,String nombre,String apellido){
         this.dni = dni;
         this.nombre = nombre;
@@ -13,7 +16,7 @@ public class Cliente {
     }
 
     public void otorgarCuentaComun(double saldoInicial,double limiteGiroInicial){
-        cuentaComun = new Cuenta(saldoInicial,limiteGiroInicial);
+        cuenta = new Cuenta(saldoInicial,limiteGiroInicial);
     }
 
 
@@ -21,16 +24,16 @@ public class Cliente {
         cuentaCredito = new CuentaCredito(limiteCreditoInicial);
     }
     public boolean comprar(double monto){
-        if (cuentaComun != null){
-            return cuentaComun.comprar(monto);
+        if (cuenta != null){
+            return cuenta.comprar(monto);
         }else {
             return false;
         }
     }
 
     public boolean booleanCompraNecesitaGiro(double monto){
-        if (cuentaComun != null) {
-            return cuentaComun.necesitaGiro(monto);
+        if (cuenta != null) {
+            return cuenta.necesitaGiro(monto);
         }else {
             return false;
         }
@@ -45,16 +48,16 @@ public class Cliente {
     }
 
     public boolean invertir(double monto){
-        if (cuentaComun != null) {
-            return cuentaComun.invertir(monto);
+        if (cuenta != null) {
+            return cuenta.invertir(monto);
         } else {
             return  false;
         }
     }
 
     public boolean recuperarInversion(){
-        if (cuentaComun != null) {
-            return cuentaComun.recuperarInversion();
+        if (cuenta != null) {
+            return cuenta.recuperarInversion();
         }else {
             return  false;
         }
@@ -62,8 +65,8 @@ public class Cliente {
     }
 
     public void depositar(double monto){
-        if (cuentaComun != null) {
-            cuentaComun.depositar(monto);
+        if (cuenta != null) {
+            cuenta.depositar(monto);
         }
     }
 
@@ -77,7 +80,10 @@ public class Cliente {
     }
 
     public double getSaldoCuenta(){
-        return cuentaComun.getSaldo();
+        if (cuenta!=null){
+        return cuenta.getSaldo();
+        }
+        return 0;
     }
 
 
@@ -86,11 +92,11 @@ public class Cliente {
     }
 
     public double getMontoEnGiro(){
-        return cuentaComun.getMontoEnGiro();
+        return cuenta.getMontoEnGiro();
     }
 
     public double getLimiteGiro(){
-        return cuentaComun.getLimiteGiro();
+        return cuenta.getLimiteGiro();
     }
 
     public double getMontoEnCredito(){
@@ -101,6 +107,6 @@ public class Cliente {
         return cuentaCredito.getLimiteCredito();
     }
     public double getInvertido(){
-        return cuentaComun.getInvertido();
+        return cuenta.getInvertido();
     }
 }

@@ -1,14 +1,14 @@
-package EJ4;
+package Ej4;
 
 import java.util.ArrayList;
 
 public class Cuenta {
-    private double saldo;
-    private double limiteGiro;
+    protected double saldo;
+    protected double limiteGiro;
     private double limiteGiroInicial;
-    private double montoEnGiro;
-    private double invertido = 0;
-    private ArrayList<Compra> compras = new ArrayList<>();
+    protected double montoEnGiro;
+    protected double invertido = 0;
+    protected ArrayList<Compra> compras = new ArrayList<>();
 
 
     public Cuenta(double saldo,double limiteGiroInicial){
