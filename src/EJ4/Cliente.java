@@ -4,8 +4,8 @@ public class Cliente {
     private String dni;
     private String nombre;
     private String apellido;
-    private Cuenta cuentaComun;
-    private CuentaCredito cuentaCredito;
+    private Cuenta cuentaComun=null;
+    private CuentaCredito cuentaCredito=null;
     public Cliente(String dni,String nombre,String apellido){
         this.dni = dni;
         this.nombre = nombre;
@@ -17,38 +17,90 @@ public class Cliente {
     }
 
 
-    public void otorgarCuentaCredito(double saldoInicial,double limiteCreditoInicial){
-        cuentaCredito = new CuentaCredito(saldoInicial,limiteCreditoInicial);
+    public void otorgarCuentaCredito(double limiteCreditoInicial){
+        cuentaCredito = new CuentaCredito(limiteCreditoInicial);
     }
     public boolean comprar(double monto){
-        return cuentaComun.comprar(monto);
+        if (cuentaComun != null){
+            return cuentaComun.comprar(monto);
+        }else {
+            return false;
+        }
     }
 
     public boolean booleanCompraNecesitaGiro(double monto){
-        return cuentaComun.necesitaGiro(monto);
+        if (cuentaComun != null) {
+            return cuentaComun.necesitaGiro(monto);
+        }else {
+            return false;
+        }
     }
 
     public boolean comprarConCredito(double monto){
+        if (cuentaCredito != null) {
         return cuentaCredito.comprar(monto);
+        }else {
+            return false;
+        }
     }
 
     public boolean invertir(double monto){
-        return cuentaComun.invertir(monto);
+        if (cuentaComun != null) {
+            return cuentaComun.invertir(monto);
+        } else {
+            return  false;
+        }
     }
 
     public boolean recuperarInversion(){
-        return cuentaComun.recuperarInversion();
+        if (cuentaComun != null) {
+            return cuentaComun.recuperarInversion();
+        }else {
+            return  false;
+        }
+
     }
 
     public void depositar(double monto){
-        cuentaComun.depositar(monto);
+        if (cuentaComun != null) {
+            cuentaComun.depositar(monto);
+        }
     }
 
-    public void depositarCuentaCredito(double monto){
-        cuentaCredito.depositar(monto);
-    }
 
     public boolean pagarCredito(double monto){
-        return cuentaCredito.pagarDeuda(monto);
+        if (cuentaCredito!= null) {
+            return cuentaCredito.pagarDeuda(monto);
+        }else {
+            return  false;
+        }
+    }
+
+    public double getSaldoCuenta(){
+        return cuentaComun.getSaldo();
+    }
+
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double getMontoEnGiro(){
+        return cuentaComun.getMontoEnGiro();
+    }
+
+    public double getLimiteGiro(){
+        return cuentaComun.getLimiteGiro();
+    }
+
+    public double getMontoEnCredito(){
+        return cuentaCredito.getMontoEnCredito();
+    }
+
+    public double getLimiteCredito(){
+        return cuentaCredito.getLimiteCredito();
+    }
+    public double getInvertido(){
+        return cuentaComun.getInvertido();
     }
 }

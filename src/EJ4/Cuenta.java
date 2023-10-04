@@ -8,7 +8,7 @@ public class Cuenta {
     private double limiteGiroInicial;
     private double montoEnGiro;
     private double invertido = 0;
-    private ArrayList<Compra> compras;
+    private ArrayList<Compra> compras = new ArrayList<>();
 
 
     public Cuenta(double saldo,double limiteGiroInicial){
@@ -55,7 +55,7 @@ public class Cuenta {
 
     public boolean recuperarInversion(){
         if (invertido!=0){
-            saldo += invertido*0.40;
+            saldo += (invertido+(invertido*0.40));
             invertido = 0;
             return true;
         }else {
@@ -75,5 +75,21 @@ public class Cuenta {
             limiteGiro = limiteGiroInicial;
             saldo += monto;
         }
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public double getInvertido() {
+        return invertido;
+    }
+
+    public double getMontoEnGiro() {
+        return montoEnGiro;
+    }
+
+    public double getLimiteGiro() {
+        return limiteGiro;
     }
 }

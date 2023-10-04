@@ -3,57 +3,50 @@ package EJ4;
 import java.util.ArrayList;
 
 public class CuentaCredito {
-    private double saldo;
+    //private double saldo;
     private double limiteCredito;
     private double limiteCreditoInicial;
     private double montoEnCredito;
-    private ArrayList<Compra> compras;
+    private ArrayList<Compra> compras = new ArrayList<>();
     private static double RECARGOFIJO = 0.05;
 
-    public CuentaCredito(double saldo,double limiteCreditoInicial){
-        this.saldo = saldo;
+    public CuentaCredito(double limiteCreditoInicial){
         this.limiteCreditoInicial = limiteCreditoInicial;
         limiteCredito = limiteCreditoInicial;
     }
 
     public boolean comprar(double monto){
-        if (saldo>=monto){
-            saldo -= monto;
-            Compra nuevaCompra = new Compra(monto);
-            compras.add(nuevaCompra);
-            return true;
-        } else if ((monto<=(saldo+limiteCredito))){
-            monto -= saldo;
-            saldo = 0;
-            limiteCredito-= monto;
+        double montoConRecargo = monto+(monto*RECARGOFIJO);
+        if(montoConRecargo<=limiteCredito){
+            limiteCredito -= montoConRecargo;
             montoEnCredito += monto;
-            Compra nuevaCompra = new Compra(monto);
-            compras.add(nuevaCompra);
             return true;
         }else {
             return false;
         }
+
     }
 
-    public void depositar(double monto){
-        saldo += monto;
-    }
 
     public boolean pagarDeuda(double monto){
-        double montoConInteres = monto*RECARGOFIJO;
+        //double montoConInteres = montoEnCredito+(montoEnCredito*RECARGOFIJO);
         if (montoEnCredito==0){
             return false;
-        } else if(montoConInteres >= montoEnCredito) {
-            montoConInteres -= montoEnCredito;
-            montoEnCredito = 0;
+        } else if(montoEnCredito>=monto) {
+            montoEnCredito -= monto;
             limiteCredito += monto;
-            saldo += monto;
             return true;
         }else {
-            montoEnCredito-= montoConInteres;
-            limiteCredito += monto;
-            return true;
+            return false;
         }
+    }
 
+
+    public double getLimiteCredito() {
+        return limiteCredito;
+    }
+
+    public double getMontoEnCredito() {
+        return montoEnCredito;
     }
 }
